@@ -1,0 +1,131 @@
+header {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+
+nav a {
+    text-align: center;
+    color: rgb(255, 254, 213);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+nav a::before {
+    content:"";
+    display:inline-block;
+    width:35px;
+    height: 35px;
+    margin-right: 5px;
+    background-image: url(horseshoe.icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+body {
+    background-color: rgb(255, 255, 237);
+}
+
+#container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    /*
+    background-color: rgb(255,213,222);
+    border-radius: 1%;
+    width: auto;
+    */
+}
+
+.trivia {
+    display: flex;
+    gap:10px;
+    align-items: flex-start;
+    background-color: rgb(255,213,222);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+    width: auto;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.character-image {
+    background-color: white;
+    padding:30px;
+    border-radius: 50%;
+    width: 250px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+.daiwa-image {
+    background-color: white;
+    padding:30px;
+    border-radius: 50%;
+    width: 220px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+
+.tanino-image {
+    background-color: white;
+    padding:40px;
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+
+.vodka-image {
+    background-color: white;
+    padding:30px;
+    border-radius: 50%;
+    width: 180px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+
+.wonder-image {
+    background-color: white;
+    padding:40px;
+    border-radius: 50%;
+    width: 180px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+
+.grass-image {
+    background-color: white;
+    padding:40px;
+    border-radius: 50%;
+    width: 180px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+
+.silence-image {
+    background-color: white;
+    padding:30px;
+    border-radius: 50%;
+    width: 200px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+
+
+.right p {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+
+.name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
