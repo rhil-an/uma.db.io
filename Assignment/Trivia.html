@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Umamusume Trivia</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="Trivia.css">
         <style>
             header {padding: 20px;
-                background-color: rgb(255, 200, 212);
-                text-align:center;
-                font-size:45px;
-                color:rgb(252, 144, 171);
-                font-weight:bold}
-            nav {padding: 10px;
-                background-color: rgb(255, 180, 199);
+                    background-color: rgb(255, 209, 219);
+                    text-align:center;
+                    font-size:45px;
+                    color:rgb(254, 165, 187);
+                    font-weight:bold;
+            }
+            nav {
+                background-color: rgb(255, 192, 208);
             }
             
             /*#container {
@@ -33,21 +34,13 @@
             .name {margin-top: 10px;
                     text-align: center;
                     color: rgb(249, 138, 168);}
-            .right p {padding:20px;
-                            background-color: lightgoldenrodyellow;
-                            color: rgb(249, 160, 179)}  
-                            
-            @media only screen and(max-width: 1040px) {
-                .nav {
-                    gap: 20px;
-                    flex-direction: column;
-                    align-items: center;
-                }
+            .right p {padding:10px;
+                        background-color: lightgoldenrodyellow;
+                        color: rgb(249, 160, 179);
+                        border-radius:10px;}  
 
-                .header{
-                    font-size: 20px;
-                }
-            }        
+            .trivia {margin-bottom:40px;}
+                                 
         </style>
     </head>
 
@@ -55,259 +48,41 @@
     <header>
         Trivia of Umamusume
     </header>
+    <!--Bootstrap navbar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <nav>
-            <a href="Frontpage.html">Home</a> 
-            <a href="Profile.html">Profile</a> 
-            <a href="RacingCareer.html">Racing Career</a>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="Frontpage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Profile.html">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="RacingCareer.html">Racing Career</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-        <div class="dividing-line">
-            ｡..ꕤ••┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈••ꕤ..。
-        </div>
-
-    <div id="container">
-        
-            <div class="trivia">
-                <div class="left">
-                    <img src="Agnes_Tachyon_Chibi.webp" alt="Agnes-Tachyon" width="200px" class="character-image">
-                    <p class="name">Agnes Tachyon</p>
-                </div>
-
-                <div class="right">
-                    <p>In the mobile game, Tachyon uniquely refers to her trainer as "guinea pig" and subjects them to a variety of experiments.</p>
-                    <p>The term "tachyon" refers to a theoretical particle that exceeds the speed of light.</p>
-                    <p>In the game, Tachyon's objective after clearing the Satsuki Sho defaults to the Japanese Derby. However, if her mood following the Satsuki Sho is Normal or worse, her objective race will change to the NHK Mile. Tachyon's Mile aptitude is D, making it hard for her to complete the objective, let alone winning it without proper Mile aptitude inheritance.</p>
-                    <p>This branching path is meant to represent the career of the real-life Tachyon, who was forced to retire due to injury after only four races, his last being the Satsuki Sho.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="Gold_Ship_Chibi.webp" alt="gold-ship" width="200px" class="character-image">
-                    <p class="name">Gold Ship</p>
-                </div>
-
-                <div class="right">
-                    <p>Secret No.1: She's scarily good at trivia quizzes.</p>
-                    <p>She has her own YouTube channel called PakaTube (ぱかチューブっ!).</p>
-                    <p>She seems to be capable of speaking English.</p>
-                    <p>In one of her voice lines, Gold Ship mentions wanting to “go on a trip bug-catching and then make a quick trip to the Philippines.” With the global release of the game, this line became more noticeable, contributing to her rising popularity in the Philippines—and by extension, boosting awareness of the franchise there.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="ElCondorPasa_Chibi.webp" alt="el-condor-pasa" width="200px" class="character-image">
-                    <p class="name">El Condor Pasa</p>
-                </div>
-
-                <div class="right">
-                    <p>Secret No.1: She has a special fabric softener for her mask.</p>
-                    <p>Her favorite things are spicy food and watching pro wrestling. Her hobby is playing the flamenco guitar.</p>
-                    <p>In one of the story events, El Condor Pasa panicked after the player seeing her without mask. Her design draws from Mexican wrestling where masks are sacred symbols of identity. Losing or removing the mask is often seen as a dramatic, vulnerable moment.</p>
-                    <p>In real life, El Condor Pasa couldn't run at the Derby and Tenno Sho. Anime episode 5 and 7 are fictional.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="Daiwa_Scarlet_Chibi.webp" alt="daiwa-scarlet" width="200px" class="daiwa-image">
-                    <p class="name">Daiwa Scarlet</p>
-                </div>
-
-                <div class="right">
-                    <p>Secret No.1: She can draw straight lines without using a ruler.</p>
-                    <p>In the original 2016 promo video, there is an animation error that depicts Daiwa Scarlet with both human and horse ears.</p>
-                    <p>During Scarlet's Career Mode storyline in the mobile game, she by default has the Japanese Oaks as one of her career goals, but the player may opt to enter her in the Japanese Derby instead in order to compete with Vodka. In real life, Scarlet ran in neither race, as she was entered into the Oaks but subsequently withdrawn due to illness.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="Special_Week_Chibi.webp" alt="special-week" width="200px" class="character-image">
-                    <p class="name">Special Week</p>
-                </div>
-
-                <div class="right">
-                    <p>Secret No.1: She can tell different brands of milk apart from taste alone.</p>
-                    <p>Like Oguri Cap, her appetite is big, she mostly appears with a swollen/bloated belly afterwards. After she weighed herself as she perceived she was starting get fat, she starts to go on a diet to maintain a healthy weight.</p>
-                    <p>Her favorite food is Carrot Salisbury Steak.</p>
-                    <p>Her mother and herself both have a Hokkaido accent once they're back at their home.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="FineMotionChibi.webp" alt="fine-motion" width="200px" class="character-image">
-                    <p class="name">Fine Motion</p>
-                </div>
-
-                <div class="right">
-                    <p>Secret No.1: She's a pro at keep-ups.</p>
-                    <p>She loves ramen. This is a character quirk invented by Cygames and doesn't have a specific real-life inspiration.</p>
-                    <p>Fine Motion is the only cast member to have no distinct ear accessory. This is due to the fact that the real horse was found to have chromosomal abnormalities causing her to be intersex, and because ear accessory determines the real horse's sex, her clover pins have no distinction. It is importantly to note that in real life, after the discovery of her chromosomal abnormalities, Fine Motion was not disqualified from any filly-only races.</p>
-                    <p>Her roommate is Air Groove. Fine's sister likes Groove, but she doesn't want to relate to her.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="Tanino_Gimlet_Chibi1-2.webp" alt="tanino-gimlet" width="200px" class="tanino-image">
-                    <p class="name">Tanino Gimlet</p>
-                </div>
-
-                <div class="right">
-                    <p>Tanino Gimlet is one of the only umamusume to refer to herself with the very masculine pronoun "ore". However, in her introductory quote, she refers to herself with both "ore" and "watashi".</p>
-                    <p>The only other umamusume to refer to herself with "ore" is Vodka, who, in real life, was sired by Tanino Gimlet.</p>
-                    <p>Tanino Gimlet's eyepatch is a reference to the real horse she's based on, whose left eye is said to be a "Dictus eye" that presents the appearance of a naturally piercing gaze.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="Vodka_Chibi.webp" alt="vodka" width="200px" class="vodka-image">
-                    <p class="name">Vodka</p>
-                </div>
-
-                <div class="right">
-                    <p>Secret No.1: She practises how to slide a glass down a counter.</p>
-                    <p>Despite her "cool," tomboyish nature, scenarios in the game reveal that Vodka isn't as messy as some people may view her as. In the Christmas scenario, it's revealed that she does all the cooking in her house during the holidays. She is also neat and organized, as raised by her mother. An exception to this are bike posters in her room, which Daiwa Scarlet complains about.</p>
-                    <p>She is one of the few umamusumes in the game to refer to herself in the masculine pronoun "ore". However, the real-life Vodka was a mare. Other umamusume who refer to themselves with this pronoun are Tanino Gimlet, who was Vodka's father in real life, Jungle Pocket and K.S Miracle.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="Wonder_Acute_Chibi.webp" alt="wonder-acute" width="200px" class="wonder-image">
-                    <p class="name">Wonder Acute</p>
-                </div>
-
-                <div class="right">
-                    <p>Wonder Acute has the longest career out of all the umamusume.</p>
-                    <p>Wonder Acute's depiction as a grandma-like umamusume is a reference to the length of the real-life horse's career. In reality, the horse Wonder Acute raced until he was nine years old, which is significantly longer than average.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="Grass_Wonder_Chibi.webp" alt="grass-wonder" width="200px" class="grass-image">
-                    <p class="name">Grass Wonder</p>
-                </div>
-
-                <div class="right">
-                    <p>Secret No.1: She's secretly particular about her skirt length.</p>
-                    <p>Her relationship to Maruzensky is a reference to real-life Grass' racing days.</p>
-                    <p>In Grass Wonder's Career path, she races in the Japanese Derby as she aims to escape Maruzensky's shadow. In real life, Maruzensky never competed in the Derby and was prohibited from doing so despite protests.</p>
-                    <p>Grass has a younger sister.</p>
-                </div>
-            </div>
-
-
-            <div class="trivia">
-                <div class="left">
-                    <img src="Silence_Suzuka_Chibi.webp" alt="silence-suzuka" width="200px" class="silence-image">
-                    <p class="name">Silence Suzuka</p>
-                </div>
-
-                <div class="right">
-                    <p>Secret No.1: She's skilled at spinning pens.
-                    <p>In real life, Silence Suzuka passed away following the 1998 Tenno Sho Autumn after it was determined that the leg fracture he sustained in the race was too severe, and he was euthanized. However, in Umamusume, Suzuka's fate and relationship with the race differs.</p>
-                    <p>In the Pretty Derby anime, Silence Suzuka fractures her leg in the race, but recovers and is able to continue racing.</p>
-                    <p>In the mobile game's Career Mode, Silence Suzuka's final objective is to win the Autumn Tenno Sho. When she wins, the special commentary noted above plays.</p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-    </body>
-</html><!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Trivia.css">
-        <style>
-            header {padding: 20px;
-                background-color: rgb(255, 200, 212);
-                text-align:center;
-                font-size:45px;
-                color:rgb(252, 144, 171);
-                font-weight:bold}
-            nav {padding: 10px;
-                background-color: rgb(255, 180, 199);
-            }
             
-            /*#container {
-                display: grid;
-                grid-template-areas: 
-                    "header header"
-                    "nav nav nav"
-                    "sidebar trivia";
-                grid-template-columns: 3fr 1fr;
-            }
-            */
-            .dividing-line {text-align: center;
-                            color: pink}
-            .name {margin-top: 10px;
-                    text-align: center;
-                    color: rgb(249, 138, 168);}
-            .right p {padding:20px;
-                            background-color: lightgoldenrodyellow;
-                            color: rgb(249, 160, 179)}  
-                            
-            @media only screen and(max-width: 1040px) {
-                .nav {
-                    gap: 20px;
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                .header{
-                    font-size: 20px;
-                }
-            }        
-        </style>
-    </head>
-
-    <body>
-    <header>
-        Trivia of Umamusume
-    </header>
-
-        <nav>
-            <a href="Frontpage.html">Home</a> 
-            <a href="Profile.html">Profile</a> 
-            <a href="RacingCareer.html">Racing Career</a>
-        </nav>
 
         <div class="dividing-line">
-            ｡..ꕤ••┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈••ꕤ..。
+            ｡..ꕤ••┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈••ꕤ..。
         </div>
 
-    <div id="container">
-        
-            <div class="trivia">
-                <div class="left">
+    <div class="text-center my-3">
+        <button class="btn trivia-btn" onclick="toggleTrivia()">Show/Hide Trivia</button>
+    </div>
+
+    <div class="container" id="triviaContainer">
+
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Agnes_Tachyon_Chibi.webp" alt="Agnes-Tachyon" width="200px" class="character-image">
                     <p class="name">Agnes Tachyon</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>In the mobile game, Tachyon uniquely refers to her trainer as "guinea pig" and subjects them to a variety of experiments.</p>
                     <p>The term "tachyon" refers to a theoretical particle that exceeds the speed of light.</p>
                     <p>In the game, Tachyon's objective after clearing the Satsuki Sho defaults to the Japanese Derby. However, if her mood following the Satsuki Sho is Normal or worse, her objective race will change to the NHK Mile. Tachyon's Mile aptitude is D, making it hard for her to complete the objective, let alone winning it without proper Mile aptitude inheritance.</p>
@@ -316,13 +91,13 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Gold_Ship_Chibi.webp" alt="gold-ship" width="200px" class="character-image">
                     <p class="name">Gold Ship</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Secret No.1: She's scarily good at trivia quizzes.</p>
                     <p>She has her own YouTube channel called PakaTube (ぱかチューブっ!).</p>
                     <p>She seems to be capable of speaking English.</p>
@@ -331,13 +106,13 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="ElCondorPasa_Chibi.webp" alt="el-condor-pasa" width="200px" class="character-image">
                     <p class="name">El Condor Pasa</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Secret No.1: She has a special fabric softener for her mask.</p>
                     <p>Her favorite things are spicy food and watching pro wrestling. Her hobby is playing the flamenco guitar.</p>
                     <p>In one of the story events, El Condor Pasa panicked after the player seeing her without mask. Her design draws from Mexican wrestling where masks are sacred symbols of identity. Losing or removing the mask is often seen as a dramatic, vulnerable moment.</p>
@@ -346,13 +121,13 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Daiwa_Scarlet_Chibi.webp" alt="daiwa-scarlet" width="200px" class="daiwa-image">
                     <p class="name">Daiwa Scarlet</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Secret No.1: She can draw straight lines without using a ruler.</p>
                     <p>In the original 2016 promo video, there is an animation error that depicts Daiwa Scarlet with both human and horse ears.</p>
                     <p>During Scarlet's Career Mode storyline in the mobile game, she by default has the Japanese Oaks as one of her career goals, but the player may opt to enter her in the Japanese Derby instead in order to compete with Vodka. In real life, Scarlet ran in neither race, as she was entered into the Oaks but subsequently withdrawn due to illness.</p>
@@ -360,13 +135,13 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Special_Week_Chibi.webp" alt="special-week" width="200px" class="character-image">
                     <p class="name">Special Week</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Secret No.1: She can tell different brands of milk apart from taste alone.</p>
                     <p>Like Oguri Cap, her appetite is big, she mostly appears with a swollen/bloated belly afterwards. After she weighed herself as she perceived she was starting get fat, she starts to go on a diet to maintain a healthy weight.</p>
                     <p>Her favorite food is Carrot Salisbury Steak.</p>
@@ -375,13 +150,13 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="FineMotionChibi.webp" alt="fine-motion" width="200px" class="character-image">
                     <p class="name">Fine Motion</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Secret No.1: She's a pro at keep-ups.</p>
                     <p>She loves ramen. This is a character quirk invented by Cygames and doesn't have a specific real-life inspiration.</p>
                     <p>Fine Motion is the only cast member to have no distinct ear accessory. This is due to the fact that the real horse was found to have chromosomal abnormalities causing her to be intersex, and because ear accessory determines the real horse's sex, her clover pins have no distinction. It is importantly to note that in real life, after the discovery of her chromosomal abnormalities, Fine Motion was not disqualified from any filly-only races.</p>
@@ -390,13 +165,13 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Tanino_Gimlet_Chibi1-2.webp" alt="tanino-gimlet" width="200px" class="tanino-image">
                     <p class="name">Tanino Gimlet</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Tanino Gimlet is one of the only umamusume to refer to herself with the very masculine pronoun "ore". However, in her introductory quote, she refers to herself with both "ore" and "watashi".</p>
                     <p>The only other umamusume to refer to herself with "ore" is Vodka, who, in real life, was sired by Tanino Gimlet.</p>
                     <p>Tanino Gimlet's eyepatch is a reference to the real horse she's based on, whose left eye is said to be a "Dictus eye" that presents the appearance of a naturally piercing gaze.</p>
@@ -404,13 +179,13 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Vodka_Chibi.webp" alt="vodka" width="200px" class="vodka-image">
                     <p class="name">Vodka</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Secret No.1: She practises how to slide a glass down a counter.</p>
                     <p>Despite her "cool," tomboyish nature, scenarios in the game reveal that Vodka isn't as messy as some people may view her as. In the Christmas scenario, it's revealed that she does all the cooking in her house during the holidays. She is also neat and organized, as raised by her mother. An exception to this are bike posters in her room, which Daiwa Scarlet complains about.</p>
                     <p>She is one of the few umamusumes in the game to refer to herself in the masculine pronoun "ore". However, the real-life Vodka was a mare. Other umamusume who refer to themselves with this pronoun are Tanino Gimlet, who was Vodka's father in real life, Jungle Pocket and K.S Miracle.</p>
@@ -418,26 +193,26 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Wonder_Acute_Chibi.webp" alt="wonder-acute" width="200px" class="wonder-image">
                     <p class="name">Wonder Acute</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Wonder Acute has the longest career out of all the umamusume.</p>
                     <p>Wonder Acute's depiction as a grandma-like umamusume is a reference to the length of the real-life horse's career. In reality, the horse Wonder Acute raced until he was nine years old, which is significantly longer than average.</p>
                 </div>
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Grass_Wonder_Chibi.webp" alt="grass-wonder" width="200px" class="grass-image">
                     <p class="name">Grass Wonder</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Secret No.1: She's secretly particular about her skirt length.</p>
                     <p>Her relationship to Maruzensky is a reference to real-life Grass' racing days.</p>
                     <p>In Grass Wonder's Career path, she races in the Japanese Derby as she aims to escape Maruzensky's shadow. In real life, Maruzensky never competed in the Derby and was prohibited from doing so despite protests.</p>
@@ -446,22 +221,33 @@
             </div>
 
 
-            <div class="trivia">
-                <div class="left">
+            <div class="row trivia">
+                <div class="col-md-3 left text-center">
                     <img src="Silence_Suzuka_Chibi.webp" alt="silence-suzuka" width="200px" class="silence-image">
                     <p class="name">Silence Suzuka</p>
                 </div>
 
-                <div class="right">
+                <div class="col-md-9 right">
                     <p>Secret No.1: She's skilled at spinning pens.
                     <p>In real life, Silence Suzuka passed away following the 1998 Tenno Sho Autumn after it was determined that the leg fracture he sustained in the race was too severe, and he was euthanized. However, in Umamusume, Suzuka's fate and relationship with the race differs.</p>
                     <p>In the Pretty Derby anime, Silence Suzuka fractures her leg in the race, but recovers and is able to continue racing.</p>
                     <p>In the mobile game's Career Mode, Silence Suzuka's final objective is to win the Autumn Tenno Sho. When she wins, the special commentary noted above plays.</p>
                 </div>
             </div>
-
-
-        </div>
     </div>
+
+    <script>
+        function toggleTrivia() {
+            var trivia = document.getElementById("triviaContainer");
+            if (trivia.style.display === "none") {
+                trivia.style.display = "block";
+            } else {
+                trivia.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
