@@ -1,87 +1,479 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Umamusume Database | Profile</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Umamusume Database | Profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <body>
-    <h1>Umamusume Analytical Profiles</h1>
+    <link rel="stylesheet" href="Profile.css">
+    <script src="Profile.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Auto-open character profile based on URL hash
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                const element = document.getElementById(hash);
+                if (element && element.tagName === 'DETAILS') {
+                    element.open = true;
+                    // Smooth scroll to the element
+                    setTimeout(() => element.scrollIntoView({behavior: 'smooth', block: 'start'}), 100);
+                }
+            }
+        });
+    </script>
+</head>
 
+<body>
 
-    <div>
-        <div class = "profile-menu">
-            <div class = "profile-tab">
-                <details>
-                    <summary>Agnes Tachyon's Profile</summary>
-                    <img src = "irl_agnestachyon.jpg" alt="irl_agnestachyon" class ="irl_image"/>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Name</td>
-                            <td>Agnes Tachyon</td>
-                            <td>Pedigree</td>
-                            <td>Sunday Silence(USA), Agnes Flora(JPN)</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Gender</td>
-                            <td>Stallion</td>
-                            <td>Color</td>
-                            <td>Chestnut</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Date of Birth</td>
-                            <td>13th Apr 1998</td>
-                            <td>Breeding Farm</td>
-                            <td>Shadai Farm</td>
-                        </tr>
-                    </tfoot>
-                </table>
-                </details>
-
-                <details>
-                    <summary>Gold Ship's Profile</summary>
-                    <img src = "irl_goldship.jpg" alt="irl_goldship" class ="irl_image"/>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Name</td>
-                            <td>Gold Ship</td>
-                            <td>Pedigree</td>
-                            <td>Stay Gold(JPN), Point Flag(JPN)</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Gender</td>
-                            <td>Stallion</td>
-                            <td>Color</td>
-                            <td>Grey</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Date of Birth</td>
-                            <td>6th Mar 2009</td>
-                            <td>Breeding Farm</td>
-                            <td>Deguchi Bokujo</td>
-                        </tr>
-                    </tfoot>
-                </table>
-                </details>
+    <nav class="navbar navbar-expand-lg bg-custom-success px-3 sticky-top">
+        <div class="container">
+            <div class="navbar-logo">
+                <img src="Uma_Musume_Pretty_Derby_JP_Logo.webp" alt="Uma Musume Logo">
+            </div>
+            <div class="navbar-brand text-white fw-bold fs-3">Profiles of Umamusume Characters
             </div>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto d-flex gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Frontpage.html">
+                            <img src="horseshoe.icon.png" class="nav-icon">
+                            <div class="nav-text">Home</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="RacingCareer.html">
+                            <img src="horseshoe.icon.png" class="nav-icon">
+                            <div class="nav-text">Racing Career</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Trivia.html">
+                            <img src="horseshoe.icon.png" class="nav-icon">
+                            <div class="nav-text">Trivia</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="dividing-line">
+        ｡..ꕤ••┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈••ꕤ..。
+    </div>
+
+    <div>
+        <div class="profile-menu">
+            <div class="profile-tab">
+                <details id="agnes-tachyon">
+                    <summary>Agnes Tachyon's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_agnestachyon.jpg" alt="irl_agnestachyon" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Agnes Tachyon</td>
+                                    <td>Pedigree</td>
+                                    <td>Sunday Silence(USA), Agnes Flora(JPN)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="stallion">Stallion</td>
+                                    <td>Color</td>
+                                    <td>Chestnut</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>13th Apr 1998</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Shadai Farm</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="daiwa-scarlet">
+                    <summary>Daiwa Scarlet's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_daiwascarlet.jpg" alt="irl_daiwascarlet" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Daiwa Scarlet</td>
+                                    <td>Pedigree</td>
+                                    <td>Agnes Tachyon(JPN), Scarlet Bouquet(JPN)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="mare">Mare</td>
+                                    <td>Color</td>
+                                    <td>Chestnut</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>13th May 2004</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Shadai Farm</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="el-condor-pasa">
+                    <summary>El Condor Pasa's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_elcondorpasa.jpg" alt="irl_elcondorpasa" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>El Condor Pasa</td>
+                                    <td>Pedigree</td>
+                                    <td>Kingmambo(USA), Saddlers Gal(IRE)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="stallion">Stallion</td>
+                                    <td>Color</td>
+                                    <td>Dark Brown</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>17th Mar 1995</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Takashi Watanabe</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="fine-motion">
+                    <summary>Fine Motion's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_finemotion.jpg" alt="irl_finemotion" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Fine Motion</td>
+                                    <td>Pedigree</td>
+                                    <td>Danehill(USA), Cocotte(GB)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="mare">Mare</td>
+                                    <td>Color</td>
+                                    <td>Brown</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>27th Jan 1999</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Barronstown Stud and Orpendale</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="gold-ship">
+                    <summary>Gold Ship's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_goldship.jpg" alt="irl_goldship" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Gold Ship</td>
+                                    <td>Pedigree</td>
+                                    <td>Stay Gold(JPN), Point Flag(JPN)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="stallion">Stallion</td>
+                                    <td>Color</td>
+                                    <td>Grey</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>6th Mar 2009</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Deguchi Bokujo</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="grass-wonder">
+                    <summary>Grass Wonder's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_grasswonder.jpg" alt="irl_grasswonder" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Grass Wonder</td>
+                                    <td>Pedigree</td>
+                                    <td>Silver Hawk(USA), Ameriflora(USA)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="stallion">Stallion</td>
+                                    <td>Color</td>
+                                    <td>Chestnut</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>18th Feb 1995</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Phillips Racing Partnership & John Phillips</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="haru-urara">
+                    <summary>Haru Urara's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_haruurara.jpg" alt="irl_haruurara" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Haru Urara</td>
+                                    <td>Pedigree</td>
+                                    <td>Nippo Teio(JPN), Heroine(JPN)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="mare">Mare</td>
+                                    <td>Color</td>
+                                    <td>Brown</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>27th Feb 1996</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Nobuta Bokujo</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="silence-suzuka">
+                    <summary>Silence Suzuka's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_silencesuzuka.jpg" alt="irl_silencesuzuka" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Silence Suzuka</td>
+                                    <td>Pedigree</td>
+                                    <td>Sunday Silence(USA), Wakia(USA)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="stallion">Stallion</td>
+                                    <td>Color</td>
+                                    <td>Chestnut</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>1st May 1994</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Inahara Bokujo</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="special-week">
+                    <summary>Special Week's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_specialweek.jpg" alt="irl_specialweek" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Special Week</td>
+                                    <td>Pedigree</td>
+                                    <td>Sunday Silence(USA), Campaign Girl(JPN)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="stallion">Stallion</td>
+                                    <td>Color</td>
+                                    <td>Dark Brown</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>2nd May 1995</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Hidaka Taiyo Bokujo</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="tanino-gimlet">
+                    <summary>Tanino Gimlet's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_taninogimlet.jpg" alt="irl_taninogimlet" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Tanino Gimlet</td>
+                                    <td>Pedigree</td>
+                                    <td>Brian's Time(USA), Tanino Crystal(JPN)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="stallion">Stallion</td>
+                                    <td>Color</td>
+                                    <td>Brown</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>4th May 1999</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Country Bokujo</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="vodka">
+                    <summary>Vodka's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_vodka.jpg" alt="irl_vodka" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Vodka</td>
+                                    <td>Pedigree</td>
+                                    <td>Tanino Gimlet(JPN), Tanino Sister(JPN)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="mare">Mare</td>
+                                    <td>Color</td>
+                                    <td>Brown</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>4th Apr 2004</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Country Bokujo</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+
+                <details id="wonder-acute">
+                    <summary>Wonder Acute's Profile</summary>
+                    <div class="profile-content">
+                        <img src="irl_wonderacute.jpg" alt="irl_wonderacute" class="irl_image" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Wonder Acute</td>
+                                    <td>Pedigree</td>
+                                    <td>Charismatic(USA), Wonder Heritage(USA)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gender">Gender</td>
+                                    <td class="stallion">Stallion</td>
+                                    <td>Color</td>
+                                    <td>Brown</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>14th Mar 2006</td>
+                                    <td>Breeding Farm</td>
+                                    <td>Fukuda Farm</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+            </div>
         </div>
     </div>
-    </body>
+</body>
+
 </html>
