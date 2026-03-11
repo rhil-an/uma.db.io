@@ -1,4 +1,4 @@
-/* ==================== GLOBAL ==================== */
+/* Main style */
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -7,7 +7,7 @@ body {
     padding: 50px 140px 0;
 }
 
-/* ==================== NAVBAR ==================== */
+/* Navbar style */
 .navbar-logo {
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@ body {
     background-image: linear-gradient(to left, rgb(226, 122, 153), rgb(207, 121, 51));
 }
 
-/* ==================== RECORD SECTIONS ==================== */
+/* Record style */
 .record-container {
     background-color: lightgoldenrodyellow;
     border: 2px solid rgb(244, 120, 141);
@@ -57,7 +57,7 @@ body {
     font-size: 16px;
 }
 
-/* Summary button (horse name) */
+/* Summary button */
 .summary-btn {
     width: 100%;
     background: transparent;
@@ -84,7 +84,7 @@ body {
     overflow-x: auto;
 }
 
-/* ==================== TABLES ==================== */
+/* Table style */
 .race-table {
     width: 100%;
     border-collapse: collapse;
@@ -102,7 +102,7 @@ body {
     font-weight: bold;
 }
 
-/* Region columns */
+/* Region column */
 .region-col {
     width: 60px;
 }
@@ -121,7 +121,7 @@ body {
     font-weight: bold;
 }
 
-/* ==================== DECORATIVE LINE ==================== */
+/* Deco line */
 .diving-line {
     overflow-x: hidden;
     white-space: nowrap;
@@ -130,13 +130,13 @@ body {
     color: #888;
 }
 
-/* ==================== FOOTER ==================== */
+/* Footer */
 footer {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
 }
 
-/* ==================== RESPONSIVE TWEAKS ==================== */
+/* Responsive */
 @media (max-width: 768px) {
     /* Reduce side padding on mobile */
     body {
