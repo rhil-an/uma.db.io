@@ -1,11 +1,197 @@
-.first-place::after{
-    content: "";
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+/* Page & Body */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    background-color: pink;
+    margin: 0;
+    padding: 50px 140px 0;
+}
 
-    margin-left: 10px;
-    margin-right: 0px;
-    
+/* Page Title Container */
+.page-title-container {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid rgb(224, 121, 138);
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+}
 
+.website-title {
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(224, 121, 138);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Container */
+.menu-container {
+    background-color: lightgoldenrodyellow;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(224, 121, 138);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font: times new roman, times, serif;
+    color: rgb(244, 120, 141);
+}
+
+.nav-list a:hover {
+    color: burlywood;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+/* Hamburger Button  */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: pink;
+}
+
+/* Navigation Menu default display */
+.nav-menu {
+    display: flex;
+}
+
+/* Record Table */
+.record-container {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid rgb(244, 120, 141);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    color: rgb(240, 116, 137);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+/* Race Table */
+.race-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: lightgoldenrodyellow;
+}
+
+.race-table th,
+.race-table td {
+    padding: 12px;
+    border: 1px solid rgb(224, 121, 138);
+    text-align: center;
+}
+
+.race-table thead {
+    background-color: pink;
+    color: rgb(224, 121, 138);
+    font-weight: bold;
+}
+
+/* Earnings Column */
+.earnings {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Region Columns */
+.region-col {
+    width: 60px;
+}
+
+.region {
+    background-color: pink;
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+}
+
+/* Japan Cell */
+.jpn {
+    background-color: rgb(224, 121, 138);
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+}
+
+/* Total Row */
+.total-row {
+    background-color: pink;
+    font-weight: bold;
+}
+
+/* ============================
+   Bootstrap Collapse Fix
+============================ */
+/* Let Bootstrap handle the toggle */
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+/* ============================
+   Mobile Styles
+============================ */
+@media (max-width: 768px) {
+
+    /* Hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Header Container */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Navigation List */
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Page Title Adjustments */
+    .website-title {
+        text-align: center;
+    }
+
+    /* Navigation Icons */
+    .nav-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Collapse Mobile Menu (Nav Menu only) */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
 }
