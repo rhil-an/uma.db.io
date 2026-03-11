@@ -6,9 +6,15 @@
     <title>Umamusume Database | Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap and JS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="Frontpage.css">
 </head>
 
@@ -17,12 +23,20 @@
 
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-custom-success px-3 sticky-top">
-      <div class="container">
+    <div class="container">
       <div class = "navbar-logo">
         <img src = "Images/Misc/Uma_Musume_Pretty_Derby_JP_Logo.webp" alt="Uma Musume Logo">
       </div>
-    <div class="navbar-brand text-white fw-bold fs-3"> Umamusume Database
+
+    <div class="navbar-brand text-white fw-bold fs-3"> 
+      Umamusume Database
     </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
     <ul class="navbar-nav ms-auto d-flex gap-4">
       <li class="nav-item">
         <a class="nav-link" href="Profile.html">
@@ -43,6 +57,7 @@
         </a>
       </li>
     </ul>
+    </div>
     </div>
   </nav>
 

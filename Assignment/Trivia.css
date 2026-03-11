@@ -34,18 +34,106 @@
   width:34px;
   height:34px;
 }
+
 .bg-custom-success {
   background: linear-gradient(to left,#e27a99, #cf7933);
 }
 
-.trivia-btn{
-    background-color: rgb(255, 180, 191);
-    color:white;
-    border:none;
+summary {
+    color: black;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    list-style: none;
+    text-align: center;
+    transition: transform 0.2s ease;
+    position: relative;
 }
 
-.trivia-btn:hover{
-    background-color:rgb(255, 153, 182);
+summary::after {
+    content: '';
+    position: absolute;
+    right: 20px; /* Position to the right*/
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /*Match SVG viewBox*/
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3e%3cpolygon points='5,8 1,2 9,2' fill='currentColor'/%3e%3c/svg%3e");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease; /*Smooth rotation*/
+}
+
+summary::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Position to the left */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /*Match SVG viewBox*/
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3e%3cpolygon points='5,8 1,2 9,2' fill='currentColor'/%3e%3c/svg%3e");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease; /*Smooth rotation*/
+}
+
+/* Rotate arrow up when details are open */
+details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+details[open] summary::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+details:nth-child(even) {
+    background-color: rgb(255, 209, 219);
+}
+
+details:nth-child(odd) {
+    background-color: rgb(255, 192, 208);
+}
+
+summary:hover {
+    background-color: #EBBABF;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+details {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 0.4s ease;
+    margin-bottom: 0px;
+    border-radius: 8px;
+}
+
+details[open] {
+    grid-template-rows: auto 1fr;
+}
+
+.trivia-content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform-origin: top;
+}
+
+details[open] .trivia-content {
+    animation: expand 0.4s ease forwards, fadeSlideIn 0.4s ease forwards;
+}
+
+details:not[open] .trivia-content {
+    animation: shrink 0.4s ease forwards, fadeSlideOut 0.4s ease forwards;
 }
 
 body {
@@ -70,6 +158,12 @@ body {
     border-radius: 50px;
     box-shadow: 0 4px 10px rgb(0,0,0,0.1);
     margin-bottom: 30px;
+}
+
+.dividing-line {
+    padding-top: 15px;
+    text-align: center;
+    color: pink
 }
 
 .left {
@@ -107,6 +201,50 @@ body {
     font-weight: bold;
     font-size: 25px;
     text-align: center;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes expand {
+    from {
+        max-height: 0;
+    }
+
+    to {
+        max-height: 500px;
+    }
+}
+
+@keyframes shrink {
+    from {
+        max-height: 500px;
+    }
+
+    to {
+        max-height: 0;
+    }
 }
 
 @media (max-width: 900px){
