@@ -74,6 +74,44 @@ summary {
     list-style: none;
     text-align: center;
     transition: transform 0.2s ease;
+    position: relative;
+}
+
+summary::after {
+    content: '';
+    position: absolute;
+    right: 20px; /* Position to the right*/
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /*Match SVG viewBox*/
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3e%3cpolygon points='5,8 1,2 9,2' fill='currentColor'/%3e%3c/svg%3e");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease; /*Smooth rotation*/
+}
+
+summary::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Position to the left */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /*Match SVG viewBox*/
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3e%3cpolygon points='5,8 1,2 9,2' fill='currentColor'/%3e%3c/svg%3e");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease; /*Smooth rotation*/
+}
+
+/* Rotate arrow up when details are open */
+details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+details[open] summary::before {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 details:nth-child(even) {
