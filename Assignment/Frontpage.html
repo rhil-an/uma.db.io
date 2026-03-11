@@ -1,209 +1,264 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Umamusume Database | Homepage</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Frontpage.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            @media only screen and (max-width: 1024px){
-                body {margin:0; padding:0;}
-                header {font-size: 1.2em;
-                        display:inline;
-                }
-            }
-            
-            @media only screen and (max-width: 768px){
-                #wrapper {grid-template-columns: auto;
-                grid-template-rows: 200px auto auto auto 100px;
-                }
-                header {grid-column: 1/2;
-                        grid-row: 1/2;
-                }
-            }
-            
-                
-        </style>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Umamusume Database | Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <header class = "frontpage-navigation-menu">
-        <div class = "frontpage-title">
-            Umamusume Database
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Frontpage.css">
+</head>
+
+
+<body>  
+
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg bg-custom-success px-3 sticky-top">
+      <div class="container">
+      <div class = "navbar-logo">
+        <img src = "Uma_Musume_Pretty_Derby_JP_Logo.webp" alt="Uma Musume Logo">
+      </div>
+    <div class="navbar-brand text-white fw-bold fs-3"> Umamusume Database
+    </div>
+    <ul class="navbar-nav ms-auto d-flex gap-4">
+      <li class="nav-item">
+        <a class="nav-link" href="Profile.html">
+          <img src="horseshoe.icon.png" class="nav-icon">
+            <div class = "nav-text">Profile</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="RacingCareer.html">
+          <img src="horseshoe.icon.png" class="nav-icon">
+          <div class = "nav-text">Racing Career</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Trivia.html">
+          <img src="horseshoe.icon.png" class="nav-icon">
+          <div class = "nav-text">Trivia</div>
+        </a>
+      </li>
+    </ul>
+    </div>
+  </nav>
+
+
+
+    <!--Intro Section-->    
+  <div class = "introqna-container">
+    <section class="intro d-flex flex-column align-items-center justify-content-center text-center p-5">
+        <img src="tracen_background.jpg" alt="Tracen Background" class="intro-img">
+        <h1 class="text-teal fw-bold mb-3" style="color: teal;">Welcome, xxx</h1>
+        <p class="fs-5">This database stores the racing history, records and facts about umamusume, based on their real-life counterparts.</p>
+    </section>
+
+    <!--Q&A Section-->
+    <section class="qn p-4">
+        <h4><strong>What is Umamusume?</strong></h4>
+        <p>Umamusume (ウマ娘), literally translating to "horse girl" in Japanese, refers to a multimedia franchise by a Japanese company, <a href="https://en.wikipedia.org/wiki/Cygames">Cygames</a>. It features humanoid characters with horse ears, tails, and superhuman running abilities, modeled after real-life, famous racehorses. It is a popular, high-grossing mobile game, anime, and manga series focusing on training these characters for competitive racing and entertainment.
+        </p>
+    </section>
+  </div>
+
+
+  <!--Characters Section-->
+  <h2 class="character-bar">
+    <section class = character-bar-text>Characters</section>
+  </h2>
+  <section class="container my-5">
+    <div class="row g-4">
+
+      <!-- Agnes Tachyon -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Agnes_Tachyon_Chibi.webp" class="card-img-top" alt="Agnes Tachyon">
+          <div class="card-body">
+            <h5 class="card-title">Agnes Tachyon</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
         </div>
-        <ul class = "navigation-links">
-            <li><a href=Profile.html>Profile</a></li>
-            <li><a href=RacingCareer.html>Racing Career</a></li>
-            <li><a href=Trivia.html>Trivia</a></li>
-        </ul>
-    </header>
+      </div>
 
-    <body>
-    <div class = "intro">
-        <welcome>Welcome to Umamusume Database</welcome>
-        <welcome2>This database stores the racing history, records and facts about umamusume, which are based off their real life counterpart.</welcome2>
-    </div>
-    <div class = "qna">
-        <strong>What is Umamusume?</strong> The word "Umamusume" translates to "horsegirl". It is a popular Japanese multimedia franchise by <a href="https://en.wikipedia.org/wiki/Cygames">Cygames</a>, a Japanese videogame studio. Umamusume are anime horsegirls that took inspiration from real life Japanese racehorses. 
-    </div>
+      <!-- Daiwa Scarlet -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Daiwa_Scarlet_Chibi.webp" class="card-img-top" alt="Daiwa Scarlet">
+          <div class="card-body">
+            <h5 class="card-title">Daiwa Scarlet</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- El Condor Pasa -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="ElCondorPasa_Chibi.webp" class="card-img-top" alt="El Condor Pasa">
+          <div class="card-body">
+            <h5 class="card-title">El Condor Pasa</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fine Motion -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Fine_Motion_Chibi.webp" class="card-img-top" alt="Fine Motion">
+          <div class="card-body">
+            <h5 class="card-title">Fine Motion</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gold Ship -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Gold_Ship_Chibi.webp" class="card-img-top" alt="Gold Ship">
+          <div class="card-body">
+            <h5 class="card-title">Gold Ship</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grass Wonder -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Grass_Wonder_Chibi.webp" class="card-img-top" alt="Grass Wonder">
+          <div class="card-body">
+            <h5 class="card-title">Grass Wonder</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Haru Urara-->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Haru_Urara_Chibi.webp" class="card-img-top" alt="Haru Urara">
+          <div class="card-body">
+            <h5 class="card-title">Haru Urara</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Silence Suzuka -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Silence_Suzuka_Chibi.webp" class="card-img-top" alt="Silence Suzuka">
+          <div class="card-body">
+            <h5 class="card-title">Silence Suzuka</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Week -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Special_Week_Chibi.webp" class="card-img-top" alt="Special Week">
+          <div class="card-body">
+            <h5 class="card-title">Special Week</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Tanino Gimlet -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Tanino_Gimlet_Chibi.webp" class="card-img-top" alt="Tanino Gimlet">
+          <div class="card-body">
+            <h5 class="card-title">Tanino Gimlet</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vodka -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Vodka_Chibi.webp" class="card-img-top" alt="Vodka">
+          <div class="card-body">
+            <h5 class="card-title">Vodka</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
+        </div>
+      </div>
     
-    <div>
-        <div class = "character-tab">
-            Characters
+      <!-- Wonder Acute -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="Wonder_Acute_Chibi.webp" class="card-img-top" alt="Wonder Acute">
+          <div class="card-body">
+            <h5 class="card-title">Wonder Acute</h5>
+            <div class="d-grid gap-2">
+              <a href="Profile.html" class="btn btn-primary btn-sm">Profile</a>
+              <a href="RacingCareer.html" class="btn btn-primary btn-sm">Racing Career</a>
+              <a href="Trivia.html" class="btn btn-primary btn-sm">Trivia</a>
+            </div>
+          </div>
         </div>
-        <div class = "character-menu">
-            <div class = "img-container">
-                <img src ="Agnes_Tachyon_Chibi.webp" alt="Agnes_Tachyon_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Agnes Tachyon
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
+      </div>
 
-            <div class = "img-container">
-                <img src ="Gold_Ship_Chibi.webp" alt="Gold_Ship_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Gold Ship
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-
-            <div class = "img-container">
-                <img src ="ElCondorPasa_Chibi.webp" alt="ElCondorPasa_Chibi" class="character-image"/>
-            <div class ="character-name">
-                El Condor Pasa
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
         
-            <div class = "img-container">
-                <img src ="Daiwa_Scarlet_Chibi.webp" alt="DaiwaScarlet_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Daiwa Scarlet
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-
-            <div class = "img-container">
-                <img src ="Special_Week_Chibi.webp" alt="Special_Week_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Special Week
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-
-            <div class = "img-container">
-                <img src ="Fine_Motion_Chibi.webp" alt="FineMotion_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Fine Motion
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-
-            <div class = "img-container">
-                <img src ="Tanino_Gimlet_Chibi.webp" alt="TaninoGimlet_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Tanino Gimlet
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-
-            <div class = "img-container">
-                <img src ="Vodka_Chibi.webp" alt="Vodka_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Vodka
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-
-            <div class = "img-container">
-                <img src ="Wonder_Acute_Chibi.webp" alt="WonderAcute_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Wonder Acute
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-
-            <div class = "img-container">
-                <img src ="Grass_Wonder_Chibi.webp" alt="GrassWonder_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Grass Wonder
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-
-            <div class = "img-container">
-                <img src ="Silence_Suzuka_Chibi.webp" alt="SilenceSuzuka_Chibi" class="character-image"/>
-            <div class ="character-name">
-                Silence Suzuka
-            </div>
-            
-            <hover-menu>
-                <button>Profile</button>
-                <button>Racing Career</button>
-                <button>Trivia</button>
-            </hover-menu>
-            </div>
-    </div>
-
 
     </body>
     <footer>
-
+      <foot class="footer-credits bg-custom-success text-center text-white p-3">
+        &copy; 2024 Umamusume Database. All rights reserved.
+      </foot>
     </footer>
 </html>
