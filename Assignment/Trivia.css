@@ -36,11 +36,61 @@
 }
 
 .bg-custom-success {
-  background: linear-gradient(to left,#e27a99, #cf7933);
+  background: linear-gradient(to left,#f992b1, #f79d53);
+  box-shadow: 0 4px 10px rgb(0,0,0,0.1);
 }
 
+.intro {
+  position: relative;
+  background-color: transparent;
+}
+
+.intro-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.40;
+  z-index: -1;  
+}
+
+.dividing-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 0.9rem;
+    color:  rgb(255, 203, 214);
+    padding: 0.5rem 0;
+}
+
+.start, .end {
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.middle {
+  flex: 1;
+  height: 8px;
+  background-image: radial-gradient(circle, rgb(255, 203, 214) 2px, transparent 2px);
+  background-size: 12px 12px; 
+  background-repeat: repeat-x; 
+  margin: 0 0.5rem;
+}
+
+.text-teal {
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.fs-5 {
+  color: rgb(36, 109, 109);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+
+
 summary {
-    color: black;
+    color: rgb(220, 105, 142);
     padding: 12px 20px;
     cursor: pointer;
     border-radius: 6px;
@@ -99,7 +149,7 @@ details:nth-child(odd) {
 }
 
 summary:hover {
-    background-color: #EBBABF;
+    background-color: #fdb8cc;
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -203,6 +253,16 @@ body {
     text-align: center;
 }
 
+footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #ffd1d1;
+}
+footer a {
+    color: white;
+    font-weight: bold;
+}
+
 @keyframes fadeSlideIn {
     from {
         opacity: 0;
@@ -233,13 +293,13 @@ body {
     }
 
     to {
-        max-height: 500px;
+        max-height: 2000px;
     }
 }
 
 @keyframes shrink {
     from {
-        max-height: 500px;
+        max-height: 2000px;
     }
 
     to {
@@ -258,4 +318,3 @@ body {
         gap: 40px;
     }
 }
-
