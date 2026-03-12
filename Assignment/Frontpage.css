@@ -1,3 +1,4 @@
+/* Nav bar stuff */
 .navbar-logo{
   display: flex;
   justify-content:center;
@@ -35,19 +36,12 @@
   height:34px;
 }
 
-body{
-  background-color: rgb(255, 255, 237);
-}
-
-.card{
-    background-color: #ffe4e1; 
-    color: #bd2c61;
-}
-
+/*Header and footer color*/
 .bg-custom-success {
   background: linear-gradient(to left,#f992b1, #f79d53);
 }
 
+/*Intro and qna part*/
 .intro {
   position: relative;
   background-color: transparent;
@@ -62,6 +56,16 @@ body{
   object-fit: cover;
   opacity: 0.5;
   z-index: -1;  
+}
+
+/*Background color, character cards*/
+body{
+  background-color: rgb(255, 255, 237);
+}
+
+.card{
+    background-color: #ffe4e1; 
+    color: #bd2c61;
 }
 
 .btn.btn-primary.btn-sm{
@@ -97,6 +101,8 @@ body{
   color: white;
   font-family:'Poppins', 'Inter', sans-serif;
 }
+
+/*Footer*/
 
 footer {
   font-family: 'Inter', sans-serif;

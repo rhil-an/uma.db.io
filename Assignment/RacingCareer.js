@@ -1,7 +1,7 @@
-const detailsList = document.querySelectorAll("details");
+const detailsList = document.querySelectorAll(".tabledetails");
 
 detailsList.forEach(details => {
-  const summary = details.querySelector("summary");
+  const summary = details.querySelector("button");
   const content = details.querySelector(".table-wrapper");
 
   summary.addEventListener("click", e => {
