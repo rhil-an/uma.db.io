@@ -4,7 +4,6 @@ body {
     font-size: 20px;
     background-color: pink;
     margin: 0;
-    padding: 50px 140px 0;
 }
 
 /* Navbar style */
@@ -50,11 +49,11 @@ body {
     background-color: lightgoldenrodyellow;
     border: 2px solid rgb(244, 120, 141);
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
     color: rgb(240, 116, 137);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 19px;
 }
 
 /* Summary button */
@@ -63,7 +62,7 @@ body {
     background: transparent;
     border: none;
     color: rgb(224, 121, 138);
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
     text-align: left;
     padding: 10px 0;
@@ -122,12 +121,30 @@ body {
 }
 
 /* Deco line */
-.diving-line {
-    overflow-x: hidden;
-    white-space: nowrap;
+.dividing-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
     font-size: 0.9rem;
-    padding: 0.5rem;
     color: #888;
+    padding: 0.5rem 0;
+}
+
+.start, .end {
+    white-space: nowrap;
+}
+
+.middle {
+    flex: 1;
+    height: 1px;
+    background: repeating-linear-gradient(
+        90deg,
+        #888,
+        #888 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    margin: 0 0.5rem;
 }
 
 /* Footer */
