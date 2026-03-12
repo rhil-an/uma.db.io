@@ -123,11 +123,12 @@ body {
 
 /* Deco line */
 .diving-line {
-    overflow-x: hidden;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-x: visible;
     font-size: 0.9rem;
     padding: 0.5rem;
     color: #888;
+    word-break: break-all;
 }
 
 /* Footer */
