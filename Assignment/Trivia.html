@@ -7,9 +7,13 @@
     <title>Umamusume Trivia</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!--Bootstrap&Javascript-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="Trivia.css">
     <script src="Trivia.js" defer></script>
 
@@ -58,9 +62,9 @@
     <nav class="navbar navbar-expand-lg bg-custom-success px-3 sticky-top">
         <div class="container">
             <div class="navbar-logo">
-                <img src="images/Misc/Uma_Musume_Pretty_Derby_JP_Logo.webp" alt="Uma Musume Logo">
+                <img src="Images/Misc/Uma_Musume_Pretty_Derby_JP_Logo.webp" alt="Uma Musume Logo">
             </div>
-            <div class="navbar-brand text-white fw-bold fs-3">Trivias of Umamusume Characters
+            <div class="navbar-brand text-white fw-bold fs-3">Trivia
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -71,20 +75,26 @@
                 <ul class="navbar-nav ms-auto d-flex gap-4">
                     <li class="nav-item">
                         <a class="nav-link" href="Frontpage.html">
-                            <img src="images/Misc/horseshoe.icon.png" class="nav-icon">
+                            <img src="Images/Misc/horseshoe.icon.png" class="nav-icon">
                             <div class="nav-text">Home</div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Profile.html">
-                            <img src="images/Misc/horseshoe.icon.png" class="nav-icon">
+                            <img src="Images/Misc/horseshoe.icon.png" class="nav-icon">
                             <div class="nav-text">Profile</div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="RacingCareer.html">
-                            <img src="images/Misc/horseshoe.icon.png" class="nav-icon">
+                            <img src="Images/Misc/horseshoe.icon.png" class="nav-icon">
                             <div class="nav-text">Racing Career</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Trivia.html">
+                            <img src="Images/Misc/horseshoe.icon.png" class="nav-icon">
+                            <div class="nav-text">Trivia</div>
                         </a>
                     </li>
                 </ul>
@@ -92,9 +102,17 @@
         </div>
     </nav>
 
+    <div class = "introqna-container">
+    <section class="intro d-flex flex-column align-items-center justify-content-center text-center p-5">
+        <img src="Images/Misc/Trivia.png" alt="Library Background" class="intro-img">
+        <h1 class="text-teal fw-bold mb-3" style="color: teal;">Trivias</h1>
+        <p class="fs-5">This page displays the Trivias of the Umamusume Characters. Shows the fun fact of each of them.</p>
+    </section>
 
     <div class="dividing-line">
-        ｡..ꕤ••┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈••ꕤ..。
+        <span class="start">｡..ꕤ••</span>
+        <span class="middle"></span>
+        <span class="end">••ꕤ..</span>
     </div>
 
     <div id="triviaContainer">
@@ -425,6 +443,14 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="bg-custom-success text-center text-white p-3">
+        &copy; 2026 Umamusume Database by Umamusume is a multimedia franchise by 
+        <a href="https://www.cygames.co.jp/" target="_blank" rel="noopener noreferrer">Cygames</a>.
+        All rights reserved.
+        <p></p>
+        <p>“This is a fan-made database. All characters and assets belong to Cygames and the Umamusume franchise.”</p>
+    </footer>
 
 </body>
 
