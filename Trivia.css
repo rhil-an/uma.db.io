@@ -257,7 +257,7 @@ body {
     max-height: 250px;
     object-fit: cover;
     background-color: white;
-    align-items: center;
+    display: block;
 }
 
 .right p {
