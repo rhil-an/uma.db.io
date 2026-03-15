@@ -28,7 +28,7 @@
     border-radius: 8px;
 }
 
-.nav-link.active{
+.nav-link.active {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -55,19 +55,19 @@
 
 /*Image/Intro*/
 .intro {
-  position: relative;
-  background-color: transparent;
+    position: relative;
+    background-color: transparent;
 }
 
-.intro-img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.5;
-  z-index: -1;  
+.intro-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .text-teal {
@@ -75,14 +75,14 @@
 }
 
 .fs-5 {
-  color: rgb(121, 10, 10);
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+    color: rgb(121, 10, 10);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
 }
 
 /*Gradient*/
 .bg-custom-success {
-  background: linear-gradient(to left,#f992b1, #f79d53);
-  box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+    background: linear-gradient(to left, #f992b1, #f79d53);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
 }
 
 /*Line*/
@@ -92,23 +92,24 @@
     align-items: center;
     width: 100%;
     font-size: 0.9rem;
-    color:  rgb(255, 203, 214);
+    color: rgb(255, 203, 214);
     padding: 0.5rem 0;
     padding-left: 6px;
     padding-right: 6px;
 }
 
-.start, .end {
+.start,
+.end {
     white-space: nowrap;
 }
 
 .middle {
-  flex: 1;
-  height: 8px;
-  background-image: radial-gradient(circle, rgb(255, 203, 214) 2px, transparent 2px);
-  background-size: 12px 12px; 
-  background-repeat: repeat-x; 
-  margin: 0 0.5rem;
+    flex: 1;
+    height: 8px;
+    background-image: radial-gradient(circle, rgb(255, 203, 214) 2px, transparent 2px);
+    background-size: 12px 12px;
+    background-repeat: repeat-x;
+    margin: 0 0.5rem;
 }
 
 /*Background colour for whole page*/
@@ -142,29 +143,35 @@ summary {
 summary::after {
     content: '';
     position: absolute;
-    right: 20px; /* Position to the right*/
+    right: 20px;
+    /* Position to the right*/
     top: 50%;
     transform: translateY(-50%);
-    width: 10px; /*Match SVG viewBox*/
+    width: 10px;
+    /*Match SVG viewBox*/
     height: 10px;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3e%3cpolygon points='5,8 1,2 9,2' fill='currentColor'/%3e%3c/svg%3e");
     background-size: contain;
     background-repeat: no-repeat;
-    transition: transform 0.3s ease; /*Smooth rotation*/
+    transition: transform 0.3s ease;
+    /*Smooth rotation*/
 }
 
 summary::before {
     content: '';
     position: absolute;
-    left: 20px; /* Position to the left */
+    left: 20px;
+    /* Position to the left */
     top: 50%;
     transform: translateY(-50%);
-    width: 10px; /*Match SVG viewBox*/
+    width: 10px;
+    /*Match SVG viewBox*/
     height: 10px;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3e%3cpolygon points='5,8 1,2 9,2' fill='currentColor'/%3e%3c/svg%3e");
     background-size: contain;
     background-repeat: no-repeat;
-    transition: transform 0.3s ease; /*Smooth rotation*/
+    transition: transform 0.3s ease;
+    /*Smooth rotation*/
 }
 
 /* Rotate arrow up when details are open */
@@ -209,7 +216,7 @@ details[open] {
 /*Image border*/
 .irl_image {
     border: rgb(231, 139, 165) 4px solid;
-    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
 }
 
 /*Content inside tab*/
@@ -235,38 +242,42 @@ details:not[open] .profile-content {
 
 .profile-content table {
     margin: auto;
-    min-width: 450px;
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    padding-right: 5px;
 }
 
 /*Table styling*/
 table,
-td{
+td {
     border: rgb(238, 149, 177) solid 2px;
     border-collapse: collapse;
     padding: 10px;
     background-color: lightgoldenrodyellow;
     color: #c45aaa;
-    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
 }
 
-.table_title{
+.table_title {
     color: rgb(222, 105, 138);
 }
 
-.dark_brown{
+.dark_brown {
     color: #5D4037;
 }
 
-.chestnut{
+.chestnut {
     color: #CD853F;
 }
 
-.brown{
+.brown {
     color: #8B4513;
 }
 
-.grey{
-    color:#B0B0B0;
+.grey {
+    color: #B0B0B0;
 }
 
 .mare {
@@ -282,6 +293,7 @@ footer {
     font-size: 1rem;
     color: #fff4f4;
 }
+
 footer a {
     color: white;
     font-weight: bold;
@@ -339,9 +351,14 @@ footer a {
         text-align: center;
     }
 
-    .irl_image {
+    .profile-content table {
         width: 100%;
-        max-width: 400px;
+    }
+
+
+    .irl_image {
+        max-width: 100%;
+        height: auto;
     }
 
 }
