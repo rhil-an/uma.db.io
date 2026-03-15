@@ -217,11 +217,10 @@ body {
 }
 
 .trivia {
-    background-color: rgb(255, 203, 214);
-    padding: 25px;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .dividing-line {
@@ -232,6 +231,7 @@ body {
 
 .left {
     display: flex;
+    flex: 0 1 auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -243,6 +243,7 @@ body {
 
 .right {
     display: flex;
+    flex: 0 1 auto;
     flex-direction: column;
     gap:10px;
 }
