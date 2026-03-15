@@ -7,10 +7,10 @@
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="bg-light">
+<body class="bg">
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="card p-4 shadow" style="width: 350px;">
             <h3 class="text-center mb-3">Login</h3>
@@ -42,6 +42,28 @@
                 alert("Invalid username or password!");
             }
         });
+
+        //Background image changer
+        const images = [
+            "https://umamusu.wiki/w/thumb.php?f=Bg_0002_08111.png&width=1200",
+            "https://umamusu.wiki/w/thumb.php?f=Bg_0001_01110.png&width=1200",
+            "https://umamusu.wiki/w/thumb.php?f=Bg_0005_03110.png&width=1200",
+            "https://umamusu.wiki/w/thumb.php?f=Bg_0006_00110.png&width=1200",
+            "https://umamusu.wiki/w/thumb.php?f=Bg_0010_00111.png&width=1200"
+        ];
+
+        let index = 0;
+        function changeBackground(){
+            document.body.style.backgroundImage = "url('" + images[index] + "')";
+            index++;
+
+            if (index >= images.length) {
+                index = 0;
+            }
+        }
+
+        changeBackground(); //first image
+        setInterval(changeBackground, 30000); //change every 30 seconds
     </script>
 
 </body>
