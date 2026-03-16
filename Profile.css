@@ -23,7 +23,7 @@
 
 .nav-link {
     display: flex;
-    align-items: right;
+    align-items: flex-end;
     color: white;
     border-radius: 8px;
 }
@@ -87,7 +87,6 @@
 
 /*Line*/
 .dividing-line {
-    padding-top: 15px;
     display: flex;
     align-items: center;
     width: 100%;

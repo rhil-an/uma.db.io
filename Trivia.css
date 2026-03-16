@@ -82,11 +82,12 @@
     font-size: 0.9rem;
     color:  rgb(255, 203, 214);
     padding: 0.5rem 0;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .start, .end {
     white-space: nowrap;
-    padding: 5px;
 }
 
 .middle {
@@ -106,7 +107,6 @@
   color: rgb(0, 100, 77);
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
 }
-
 
 summary {
     color: rgb(220, 105, 142);
@@ -213,7 +213,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 30px;
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
 }
 
 .trivia {
