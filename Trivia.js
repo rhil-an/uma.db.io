@@ -17,7 +17,7 @@ detailsList.forEach(details => {
         content.style.animation = "";
       }, { once: true });
 
-    } 
+    }
     else {
 
       //close all others first
@@ -33,4 +33,25 @@ detailsList.forEach(details => {
     }
 
   });
+});
+
+// Auto-open character profile based on URL hash
+document.addEventListener('DOMContentLoaded', function () {
+  function openDetails() {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const element = document.getElementById(hash);
+      if (element && element.tagName === 'DETAILS') {
+        element.open = true;
+        // Smooth scroll to the element
+        setTimeout(() => element.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+      }
+    }
+  }
+
+  // Run on initial load
+  openDetails();
+
+  // Run when hash changes (e.g., manual URL edit or navigation)
+  window.addEventListener('hashchange', openDetails);
 });
